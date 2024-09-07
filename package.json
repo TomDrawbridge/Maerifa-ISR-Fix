@@ -1,0 +1,37 @@
+{
+  "name": "tmp-cpa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@plasmicapp/cli": "^0.1.331",
+    "@plasmicapp/react-web": "^0.2.350",
+    "@plasmicpkgs/antd5": "^0.0.249",
+    "@plasmicpkgs/lottie-react": "^0.0.196",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.228",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.191",
+    "@plasmicpkgs/radix-ui": "^0.0.62",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.208",
+    "@plasmicpkgs/react-slick": "^0.0.227",
+    "dayjs": "^1.11.13",
+    "jquery": "^3.7.1",
+    "next": "14.2.8",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8",
+    "typescript": "^5"
+  }
+}

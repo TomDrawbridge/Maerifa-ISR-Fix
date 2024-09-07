@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  position: relative;
+}
+.icon2 {
+  object-fit: cover;
+  max-width: 100%;
+  width: 42px;
+  height: 42px;
+  transition-property: all;
+  transition-duration: 0.4s;
+  position: relative;
+  flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.4s;
+}
+.icon2colour_blue {
+  color: var(--token-5AI_Gda4ZPGN);
+}
