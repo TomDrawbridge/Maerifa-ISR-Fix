@@ -1215,17 +1215,17 @@
         },
         {
           "id": "71kaamFMij4T",
-          "name": "OurApproach2",
+          "name": "Impact",
           "type": "managed",
           "projectId": "umqBp7PH6EsELMxj7VcR5D",
-          "renderModuleFilePath": "plasmic/maerifa_solutions/PlasmicOurApproach2.tsx",
+          "renderModuleFilePath": "plasmic/maerifa_solutions/PlasmicImpact.tsx",
           "importSpec": {
-            "modulePath": "../pages/our-approach-2.tsx"
+            "modulePath": "../pages/impact.tsx"
           },
-          "cssFilePath": "plasmic/maerifa_solutions/PlasmicOurApproach2.module.css",
+          "cssFilePath": "plasmic/maerifa_solutions/PlasmicImpact.module.css",
           "scheme": "blackbox",
           "componentType": "page",
-          "path": "/our-approach-2"
+          "path": "/impact"
         }
       ],
       "icons": [
@@ -1638,6 +1638,11 @@
           "id": "GBAmxiFcI80u",
           "name": "SunSvgrepoComSvgIcon",
           "moduleFilePath": "plasmic/maerifa_solutions/icons/PlasmicIcon__SunSvgrepoComSvg.tsx"
+        },
+        {
+          "id": "sr3Ma6wXCiee",
+          "name": "EmpowerLogoBlueSvgIcon",
+          "moduleFilePath": "plasmic/maerifa_solutions/icons/PlasmicIcon__EmpowerLogoBlueSvg.tsx"
         }
       ],
       "images": [
@@ -1850,6 +1855,11 @@
           "id": "5m5t7zRy3wTq",
           "name": "WhatsApp Image 2024-09-06 at 10.46.38.jpeg",
           "filePath": "../public/plasmic/maerifa_solutions/images/whatsAppImage20240906At104638Jpeg.jpg"
+        },
+        {
+          "id": "Xfxydjcke98h",
+          "name": "Screenshot_2024-04-09_at_2.00.05 PM_.png",
+          "filePath": "../public/plasmic/maerifa_solutions/images/screenshot20240409At20005PmPng.png"
         }
       ],
       "indirect": false,
@@ -1921,12 +1931,6 @@
           "name": "CustomMarquee",
           "displayName": "Custom Marquee",
           "componentImportPath": "./components/Marquee"
-        },
-        {
-          "id": "RgDVU4heTPtd",
-          "name": "ThemeGlobalContext",
-          "displayName": "ThemeGlobalContext",
-          "componentImportPath": "./src/ThemeGlobalContext"
         },
         {
           "id": "j5VRkgxjZasu",

@@ -71,7 +71,7 @@ import { useScreenVariants as useScreenVariantsjnoQdQuyEw7D } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_antd_5_hostless_css from "./plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: umqBp7PH6EsELMxj7VcR5D/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: dPjsQHSr76Zi/css
 
@@ -2744,7 +2744,7 @@ export const PlasmicHomepage = Object.assign(
     // Page metadata
     pageMetadata: {
       title:
-        "Maerifa Solutions | High-Performance Server Technology on a Global Scale",
+        "Maerifa Solutions | Leading-edge technology solutions on a global scale",
       description:
         "Empowering enterprises worldwide with state-of-the-art ICT infrastructure, Maerifa drives the future of global technology with unparalleled digital innovation.",
       ogImageSrc:

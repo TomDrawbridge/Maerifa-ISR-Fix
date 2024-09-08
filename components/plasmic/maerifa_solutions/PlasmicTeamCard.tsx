@@ -62,9 +62,11 @@ import {
 import { AntdModal } from "@plasmicpkgs/antd5/skinny/registerModal";
 import ReadMoreButton from "../../ReadMoreButton"; // plasmic-import: zIbTrUHHii3n/component
 
+import { useScreenVariants as useScreenVariantsjnoQdQuyEw7D } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: JnoQdQUYEw7d/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_antd_5_hostless_css from "./plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: umqBp7PH6EsELMxj7VcR5D/projectcss
 import sty from "./PlasmicTeamCard.module.css"; // plasmic-import: 9kMbghGPkPE0/css
 
@@ -227,6 +229,10 @@ function PlasmicTeamCard__RenderFunc(props: {
   const triggers = {
     hover_bentoBox: isBentoBoxHover
   };
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsjnoQdQuyEw7D()
+  });
 
   return (
     <Stack__
@@ -610,7 +616,11 @@ function PlasmicTeamCard__RenderFunc(props: {
                   whiteOnWhite={triggers.hover_bentoBox ? true : undefined}
                 />
               }
-              width={"700px"}
+              width={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "95%"
+                  : "700px"
+              }
               wrapClassName={classNames({ [sty["pcls_1pnSarMPJb4g"]]: true })}
             >
               <div className={classNames(projectcss.all, sty.freeBox___6Rwfj)}>
@@ -626,7 +636,10 @@ function PlasmicTeamCard__RenderFunc(props: {
                     dangerouslySetInnerHTML={{
                       __html: (() => {
                         try {
-                          return $props.longBio;
+                          return $props.longBio.replace(
+                            /<\/p>/g,
+                            "</p><br><br><p>"
+                          );
                         } catch (e) {
                           if (
                             e instanceof TypeError ||

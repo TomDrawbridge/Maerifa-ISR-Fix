@@ -239,6 +239,8 @@
   --plasmic-mixin-gradient-bg_white-space: var(
     --mixin-C_ihiea-6xh1_white-space
   );
+  --mixin-JL8ovUDTiylF_white-space: pre-wrap;
+  --plasmic-mixin-box_white-space: var(--mixin-JL8ovUDTiylF_white-space);
 }
 
 :where(.all) {

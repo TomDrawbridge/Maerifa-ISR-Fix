@@ -73,7 +73,7 @@ import { useScreenVariants as useScreenVariantsjnoQdQuyEw7D } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_antd_5_hostless_css from "./plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: umqBp7PH6EsELMxj7VcR5D/projectcss
 import sty from "./PlasmicPageWrapper.module.css"; // plasmic-import: LxnEHVEe-YQz/css
 
@@ -703,13 +703,17 @@ function PlasmicPageWrapper__RenderFunc(props: {
               const currentItem = __plasmic_item_0;
               const currentIndex = __plasmic_idx_0;
               return (
-                <div
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__a91QM
+                    sty.link__a91QM
                   )}
+                  component={Link}
+                  href={`/products`}
                   key={currentIndex}
+                  platform={"nextjs"}
                 >
                   <React.Fragment>
                     {(() => {
@@ -726,7 +730,7 @@ function PlasmicPageWrapper__RenderFunc(props: {
                       }
                     })()}
                   </React.Fragment>
-                </div>
+                </PlasmicLink__>
               );
             })}
           </Stack__>
@@ -813,13 +817,17 @@ function PlasmicPageWrapper__RenderFunc(props: {
               const currentItem = __plasmic_item_0;
               const currentIndex = __plasmic_idx_0;
               return (
-                <div
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__jPE4
+                    sty.link__jPE4
                   )}
+                  component={Link}
+                  href={`/locations`}
                   key={currentIndex}
+                  platform={"nextjs"}
                 >
                   <React.Fragment>
                     {(() => {
@@ -836,7 +844,7 @@ function PlasmicPageWrapper__RenderFunc(props: {
                       }
                     })()}
                   </React.Fragment>
-                </div>
+                </PlasmicLink__>
               );
             })}
           </Stack__>

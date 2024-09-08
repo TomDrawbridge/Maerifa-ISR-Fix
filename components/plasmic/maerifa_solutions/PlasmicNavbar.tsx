@@ -75,7 +75,7 @@ import { useScreenVariants as useScreenVariantsjnoQdQuyEw7D } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_antd_5_hostless_css from "./plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: umqBp7PH6EsELMxj7VcR5D/projectcss
 import sty from "./PlasmicNavbar.module.css"; // plasmic-import: sMFUSm4Rse1n/css
 
@@ -721,6 +721,34 @@ function PlasmicNavbar__RenderFunc(props: {
                 <NavbarItem
                   className={classNames("__wab_instance", sty.navbarItem__hpir)}
                   description={``}
+                  onClick={async event => {
+                    const $steps = {};
+
+                    $steps["goToImpact"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/impact` };
+                          return (({ destination }) => {
+                            if (
+                              typeof destination === "string" &&
+                              destination.startsWith("#")
+                            ) {
+                              document
+                                .getElementById(destination.substr(1))
+                                .scrollIntoView({ behavior: "smooth" });
+                            } else {
+                              __nextRouter?.push(destination);
+                            }
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      $steps["goToImpact"] != null &&
+                      typeof $steps["goToImpact"] === "object" &&
+                      typeof $steps["goToImpact"].then === "function"
+                    ) {
+                      $steps["goToImpact"] = await $steps["goToImpact"];
+                    }
+                  }}
                   title={"Impact"}
                 />
               </NavbarA>

@@ -5,7 +5,6 @@
   color: var(--token-5AI_Gda4ZPGN);
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5em;
   user-select: none;
   transition-property: all;
@@ -17,12 +16,17 @@
   box-shadow: 0px 0px 0px 5px #1d99ff00;
   padding-left: 0px;
   padding-right: 0px;
+  cursor: pointer;
+  font-size: 18px;
   display: inline-block;
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.2s;
   border-radius: 5px;
 }
 .rootwhite {
+  color: var(--token-u7dzQvXTMnBw);
+}
+.rootwhiteOnWhite {
   color: var(--token-u7dzQvXTMnBw);
 }
 .root:hover {
@@ -34,4 +38,12 @@
 .rootwhite:hover {
   background: #ebf6fb26;
   box-shadow: 0px 0px 0px 3px #ebf6fb26;
+}
+.rootwhiteOnWhite:hover {
+  background: #ebf6fb33;
+  box-shadow: 0px 0px 0px 3px #ebf6fb33;
+  color: var(--token-u7dzQvXTMnBw);
+}
+.rootwhiteOnWhite_white:hover {
+  color: var(--token-u7dzQvXTMnBw);
 }

@@ -77,7 +77,7 @@ import { useScreenVariants as useScreenVariantsjnoQdQuyEw7D } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_antd_5_hostless_css from "./plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: umqBp7PH6EsELMxj7VcR5D/projectcss
 import sty from "./PlasmicTeam.module.css"; // plasmic-import: MK7PU_8zBcy2/css
 
@@ -179,7 +179,20 @@ function PlasmicTeam__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicTeam.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicTeam.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicTeam.pageMetadata.title}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -784,7 +797,8 @@ export const PlasmicTeam = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
+      title:
+        "Our Team | Maerifa Solutions | Maerifa Solutions | Leading-edge technology solutions on a global scale",
       description: "",
       ogImageSrc: "",
       canonical: ""

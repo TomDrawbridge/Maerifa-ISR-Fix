@@ -304,8 +304,18 @@
   min-width: 0;
   padding: 0px 15px 15px;
 }
+@media (min-width: 0px) and (max-width: 800px) {
+  .freeBox___6Rwfj {
+    padding: 0px;
+  }
+}
 .text__kuhKx {
   color: var(--token-Thw8VOVGBQ7b);
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .text__kuhKx {
+    font-size: 16px;
+  }
 }
 .textContent3 {
   display: flex;
@@ -336,6 +346,11 @@
   > picture
   > img {
   margin-top: 0px;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .textContent3 {
+    padding: 15px 0px 0px;
+  }
 }
 .textContent3type_noHoverButton {
   margin: 0px;
